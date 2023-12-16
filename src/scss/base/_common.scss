@@ -8,3 +8,20 @@
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
 }
+
+.btn {
+  display: flex;
+  
+  background-color: #7399FF;
+  border-radius: 6px;
+  font-weight: 700;
+  color: #fff;
+  transition: .3s;
+  
+  margin: 0 auto;
+  padding: 10px 39px;
+
+  &:hover, &:focus {
+    background-color: #5884fb;
+  }
+}

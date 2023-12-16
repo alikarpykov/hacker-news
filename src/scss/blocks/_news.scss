@@ -10,8 +10,9 @@
 
     font-size: 2.25rem;
     line-height: 133.333%;
+    font-weight: 700;
 
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   &__articles {
@@ -21,7 +22,13 @@
     gap: 32px;
   }
 
-  &__article {}
+  &__article {
+    border-radius: 15px;
+
+    margin-bottom: 30px;
+  }
+
+  &__btn {}
 }
 
 .article {
@@ -66,23 +73,31 @@
   &__title {
     font-size: 1.5rem;
     font-weight: 600;
+    line-height: 75%;
+    /* 24/32 */
 
     margin-bottom: 24px;
   }
 
   &__description {
     flex-grow: 1;
+    line-height: 150%;
+    /* 24/16 */
 
     margin-bottom: 32px;
   }
 
   &__more {
-    display: block;
     border-radius: 50px;
     border: 1px solid #779CFF;
     line-height: 171.429%;
+    transition: .3s;
 
     margin-left: auto;
     padding: 4px 24px;
+
+    &:hover, &:focus {
+      background-color: #779CFF;
+    }
   }
 }

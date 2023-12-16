@@ -47,8 +47,9 @@ h4,
 h5,
 h6,
 p {
-  font-size: inherit;
+  // font-size: inherit;
   font-weight: inherit;
+  overflow-wrap: break-word;
 }
 
 ul li {
