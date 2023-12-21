@@ -50,9 +50,7 @@ function renderArticles(articlesArray) {
   newsArticles.innerHTML = html
 }
 
-document.querySelector('#reload').addEventListener('click', async () => {
-  await fetchNews()
-})
+document.querySelector('#reload').addEventListener('click', fetchNews)
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -62,6 +60,4 @@ function shuffle(array) {
   return array;
 }
 
-window.addEventListener('load', () => {
-  fetchNews()
-})
+window.addEventListener('load', fetchNews)
