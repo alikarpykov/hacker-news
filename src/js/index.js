@@ -2,7 +2,7 @@ const newsArticles = document.querySelector('#news-articles')
 
 async function fetchNews() {
   try {
-    const response = await fetch('https://newsdata.io/api/1/news?apikey=pub_34927f12c1b52f2b9034b57ca66ebc53a31a6&q=cryptocurrency&language=en&image=1')
+    const response = await fetch('https://newsdata.io/api/1/news?apikey=pub_34927f12c1b52f2b9034b57ca66ebc53a31a6&q=cryptocurrency&language=en&image=1&full_content=1')
     const data = await response.json()
     const shuffledArray = shuffle(data.results)
   
